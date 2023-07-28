@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: aqua;
+    /* padding: 50px 3rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    border: 5px solid greenyellow;
+    min-height: 100vh;
+    width: 80%;
+}
+
+
+ul{
+    list-style: none;
+    border: 1px solid red;
+
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+ul > li{
+    /* border: 1px solid gray; */
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s all linear;
+}
+
+li:hover{
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: yellow;
+    color:aliceblue;
+}

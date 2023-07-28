@@ -1,0 +1,95 @@
+
+
+.main-container{
+    width: 95%;
+    min-height: 100vh;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card{
+    /* border: 1px solid green; */
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+
+#frm{
+    /* border: 3px solid black; */
+    box-shadow: 0px 1px 10px lightblue inset;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.form-group{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 10px;
+}
+
+.form-group > input{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 0.5px solid gray;
+}
+
+.form-group > label{
+    font-size: 1.2rem;
+}
+
+.form-group:last-child{
+    width: 70%;
+    justify-content: end;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.form-group > .btn{
+    width: 20%;
+    padding: 10px;
+    font-size: 1.2rem;
+    min-width: 100px;
+}
+
+.form-group > input:focus{
+    box-shadow: 0px 0px 5px green;
+    outline: none;
+    border: none;
+}
+
+.form-group > .btn:hover{
+    box-shadow: 1px 1px 10px green;
+    outline: 1px solid green;
+    border: 1px solid green;
+}
+
+@media screen and (max-width: 768px) {
+    .form-group > .btn{
+        font-size: 0.8rem;
+        /* padding: 5px; */
+    }
+    
+}

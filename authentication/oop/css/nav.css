@@ -1,0 +1,134 @@
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    background: linear-gradient(to right,white,black);
+    padding: 2rem 0.5rem;
+    align-items: center;
+    /* height: 5rem; */
+}
+
+.logo{
+    display: flex;
+    align-items: start;
+    /* border: 1px solid red; */
+}
+
+.logo img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-logo{
+    color: #eee;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0 8px;
+
+}
+
+.log-out{
+    /* border: 1px solid rebeccapurple; */
+    border: none;
+    padding: 5px;
+}
+
+.nav-link{
+    padding: 10px;
+    color: #eee;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+
+    background-color: #00adb5;
+}
+
+.header-toggle,
+.header-close{
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+
+    }
+
+    .logo a{
+        font-size: 0.9rem;
+    }
+
+    .logo img{
+        width: 40px;
+    }
+
+    .header-toggle{
+        display: inline;
+        color: #eee;
+        font-size: 24px;
+    }
+
+    .header-close{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+
+    .header-close:hover{
+        background-color: #00adb5;
+    }
+
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #222831;
+        color: #eee;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin: 2rem 0;
+    }
+
+    .show{
+        right: 0;
+    }
+
+}
+
+.logout{
+    border: 1px solid aquamarine;
+}

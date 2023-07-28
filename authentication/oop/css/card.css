@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;600;700;900&display=swap');
+
+
+.card-scroll{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D212B;
+}
+
+
+.card-scroll{
+    color: #fff;
+    background-color: black;
+}
+
+
+.card-scroll .container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    margin: 100px;
+}
+
+
+.card-scroll h1{
+    font-size: 60px;
+}
+
+.card-scroll h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-scroll .cards{
+    display: flex;
+}
+
+.card-scroll .cards .text-card{
+    background: #2696E9;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px 0;
+}
+
+.card-scroll .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-scroll .cards .text-card p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+@media (max-width:900px) {
+    .card-scroll h1{
+        font-size: 40px;
+    }
+
+    .card-scroll .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+
+/* .reveal1{
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+    transform: translateY(-150px);
+    background-color: firebrick;
+}
+
+.reveal2{
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+    transform: translateX(150px);
+    background-color: green;
+}
+
+.reveal3{
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+    transform: translateY(150px);
+    background-color: rebeccapurple;
+}  */
+
+.reveal.active{
+    transform: translate(0px);
+    opacity: 1;
+}
+
